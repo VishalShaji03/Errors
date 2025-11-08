@@ -4,3 +4,13 @@ Role: 2
 Role Type: number
 hasRole('HotelManager'): false
 hasAnyRole(['HotelManager', 'Admin']): false
+
+TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+src/app/services/auth.service.ts:156:41
+✘ [ERROR] TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'. [plugin angular-compiler]
+
+    src/app/services/auth.service.ts:156:41:
+      156 │     const result = user ? roles.includes(user.role) : false;
+          ╵                                          ~~~~~~~~~
