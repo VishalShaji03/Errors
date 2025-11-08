@@ -1,0 +1,189 @@
+
+> hotel-frontend@1.0.0 start
+> npx ng serve --open --port 4200 --proxy-config proxy.conf.json
+
+Application bundle generation failed. [6.426 seconds] - 2025-11-08T05:51:41.457Z
+
+▲ [WARNING] NG8109: loyaltyAccount is a function and should be invoked: loyaltyAccount() [plugin angular-compiler]
+
+    src/app/pages/profile/profile.component.html:43:13:
+      43 │         @if (loyaltyAccount) {
+         ╵              ~~~~~~~~~~~~~~
+
+  Warning occurs in the template of component ProfileComponent.
+
+    src/app/pages/profile/profile.component.ts:22:15:
+      22 │   templateUrl: './profile.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel[]>'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.ts:23:31:
+      23 │     this.hotelService.getAll().subscribe({
+         ╵                                ~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'hotels' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.ts:24:13:
+      24 │       next: (hotels) => {
+         ╵              ~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.ts:27:14:
+      27 │       error: (err) => console.error('Error loading hotels:', err)
+         ╵               ~~~
+
+
+✘ [ERROR] TS2341: Property 'authService' is private and only accessible within class 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:80:11:
+      80 │       @if (authService.isAuthenticated()) {
+         ╵            ~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel | null>'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:90:34:
+      90 │     this.hotelService.getById(id).subscribe({
+         ╵                                   ~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Review[]>'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:103:43:
+      103 │     this.reviewService.getHotelReviews(id).subscribe({
+          ╵                                            ~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Booking | null>'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:180:44:
+      180 │     this.bookingService.create(bookingData).subscribe({
+          ╵                                             ~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Review | null>'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:220:42:
+      220 │     this.reviewService.submit(reviewData).subscribe({
+          ╵                                           ~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel[]>'. [plugin angular-compiler]
+
+    src/app/pages/hotels/hotels.component.ts:30:10:
+      30 │         ).subscribe({
+         ╵           ~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'hotels' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/pages/hotels/hotels.component.ts:31:17:
+      31 │           next: (hotels) => {
+         ╵                  ~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/pages/hotels/hotels.component.ts:35:18:
+      35 │           error: (err) => {
+         ╵                   ~~~
+
+
+✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel[]>'. [plugin angular-compiler]
+
+    src/app/pages/hotels/hotels.component.ts:41:35:
+      41 │         this.hotelService.getAll().subscribe({
+         ╵                                    ~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'hotels' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/pages/hotels/hotels.component.ts:42:17:
+      42 │           next: (hotels) => {
+         ╵                  ~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/pages/hotels/hotels.component.ts:46:18:
+      46 │           error: (err) => {
+         ╵                   ~~~
+
+
+✘ [ERROR] TS2774: This condition will always return true since this function is always defined. Did you mean to call it instead? [plugin angular-compiler]
+
+    src/app/pages/profile/profile.component.html:43:13:
+      43 │         @if (loyaltyAccount) {
+         ╵              ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component ProfileComponent.
+
+    src/app/pages/profile/profile.component.ts:22:15:
+      22 │   templateUrl: './profile.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'pointsBalance' does not exist on type 'WritableSignal<LoyaltyAccount | null>'. [plugin angular-compiler]
+
+    src/app/pages/profile/profile.component.html:47:61:
+      47 │ ...pan class="points-value">{{ loyaltyAccount.pointsBalance }}</span>
+         ╵                                               ~~~~~~~~~~~~~
+
+  Error occurs in the template of component ProfileComponent.
+
+    src/app/pages/profile/profile.component.ts:22:15:
+      22 │   templateUrl: './profile.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'totalPointsEarned' does not exist on type 'WritableSignal<LoyaltyAccount | null>'. [plugin angular-compiler]
+
+    src/app/pages/profile/profile.component.html:54:37:
+      54 │                 <p>{{ loyaltyAccount.totalPointsEarned }} points</p>
+         ╵                                      ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component ProfileComponent.
+
+    src/app/pages/profile/profile.component.ts:22:15:
+      22 │   templateUrl: './profile.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'lastUpdated' does not exist on type 'WritableSignal<LoyaltyAccount | null>'. [plugin angular-compiler]
+
+    src/app/pages/profile/profile.component.html:58:37:
+      58 │ ...           <p>{{ loyaltyAccount.lastUpdated | date:'medium' }}</p>
+         ╵                                    ~~~~~~~~~~~
+
+  Error occurs in the template of component ProfileComponent.
+
+    src/app/pages/profile/profile.component.ts:22:15:
+      22 │   templateUrl: './profile.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2488: Type 'WritableSignal<PointsTransaction[]>' must have a '[Symbol.iterator]()' method that returns an iterator. [plugin angular-compiler]
+
+    src/app/pages/profile/profile.component.html:75:31:
+      75 │           @for (transaction of transactions; track transaction.id) {
+         ╵                                ~~~~~~~~~~~~
+
+  Error occurs in the template of component ProfileComponent.
+
+    src/app/pages/profile/profile.component.ts:22:15:
+      22 │   templateUrl: './profile.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Watch mode enabled. Watching for file changes...
