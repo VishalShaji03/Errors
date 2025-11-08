@@ -1,0 +1,6 @@
+🐛 DEBUG INFO:
+User: Jane Manager
+Role: 2
+Role Type: number
+hasRole('HotelManager'): false
+hasAnyRole(['HotelManager', 'Admin']): false
