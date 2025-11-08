@@ -1,44 +1,89 @@
+PS C:\Users\2439107\OneDrive - Cognizant\Desktop\Project\New Folder\FinalDestination\finaldestination\ClientApp> npm run start
 
 > hotel-frontend@1.0.0 start
 > npx ng serve --open --port 4200 --proxy-config proxy.conf.json
 
-Application bundle generation failed. [6.426 seconds] - 2025-11-08T05:51:41.457Z
+Application bundle generation failed. [14.492 seconds] - 2025-11-08T06:52:43.952Z
 
-▲ [WARNING] NG8109: loyaltyAccount is a function and should be invoked: loyaltyAccount() [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'searchParams' does not exist on type 'HomeComponent'. [plugin angular-compiler]
 
-    src/app/pages/profile/profile.component.html:43:13:
-      43 │         @if (loyaltyAccount) {
-         ╵              ~~~~~~~~~~~~~~
+    src/app/pages/home/home.component.html:11:40:
+      11 │ ...ut type="text" [(ngModel)]="searchParams.city" placeholder="City">
+         ╵                                ~~~~~~~~~~~~
 
-  Warning occurs in the template of component ProfileComponent.
+  Error occurs in the template of component HomeComponent.
 
-    src/app/pages/profile/profile.component.ts:22:15:
-      22 │   templateUrl: './profile.component.html'
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel[]>'. [plugin angular-compiler]
-
-    src/app/pages/home/home.component.ts:23:31:
-      23 │     this.hotelService.getAll().subscribe({
-         ╵                                ~~~~~~~~~
+    src/app/pages/home/home.component.ts:13:15:
+      13 │   templateUrl: './home.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS7006: Parameter 'hotels' implicitly has an 'any' type. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'searchParams' does not exist on type 'HomeComponent'. [plugin angular-compiler]
 
-    src/app/pages/home/home.component.ts:24:13:
-      24 │       next: (hotels) => {
-         ╵              ~~~~~~
+    src/app/pages/home/home.component.html:11:40:
+      11 │ ...ut type="text" [(ngModel)]="searchParams.city" placeholder="City">
+         ╵                                ~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+      13 │   templateUrl: './home.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'searchParams' does not exist on type 'HomeComponent'. [plugin angular-compiler]
 
-    src/app/pages/home/home.component.ts:27:14:
-      27 │       error: (err) => console.error('Error loading hotels:', err)
-         ╵               ~~~
+    src/app/pages/home/home.component.html:15:42:
+      15 │ ...ype="number" [(ngModel)]="searchParams.maxPrice" placeholder="M...
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+      13 │   templateUrl: './home.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2341: Property 'authService' is private and only accessible within class 'HotelDetailComponent'. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'searchParams' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:15:42:
+      15 │ ...ype="number" [(ngModel)]="searchParams.maxPrice" placeholder="M...
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+      13 │   templateUrl: './home.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'searchParams' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:19:42:
+      19 │ ...ype="number" [(ngModel)]="searchParams.minRating" placeholder="...
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+      13 │   templateUrl: './home.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'searchParams' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:19:42:
+      19 │ ...ype="number" [(ngModel)]="searchParams.minRating" placeholder="...
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:13:15:
+      13 │   templateUrl: './home.component.html'
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'authService' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
     src/app/pages/hotel-detail/hotel-detail.component.html:80:11:
       80 │       @if (authService.isAuthenticated()) {
@@ -51,139 +96,290 @@ Application bundle generation failed. [6.426 seconds] - 2025-11-08T05:51:41.457Z
          ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel | null>'. [plugin angular-compiler]
+✘ [ERROR] NG8002: Can't bind to 'formGroup' since it isn't a known property of 'form'. [plugin angular-compiler]
 
-    src/app/pages/hotel-detail/hotel-detail.component.ts:90:34:
-      90 │     this.hotelService.getById(id).subscribe({
-         ╵                                   ~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:83:16:
+      83 │           <form [formGroup]="reviewForm" (ngSubmit)="submitReview()">
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+  Error occurs in the template of component HotelDetailComponent.
 
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Review[]>'. [plugin angular-compiler]
-
-    src/app/pages/hotel-detail/hotel-detail.component.ts:103:43:
-      103 │     this.reviewService.getHotelReviews(id).subscribe({
-          ╵                                            ~~~~~~~~~
-
-
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Booking | null>'. [plugin angular-compiler]
-
-    src/app/pages/hotel-detail/hotel-detail.component.ts:180:44:
-      180 │     this.bookingService.create(bookingData).subscribe({
-          ╵                                             ~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Review | null>'. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'reviewForm' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
-    src/app/pages/hotel-detail/hotel-detail.component.ts:220:42:
-      220 │     this.reviewService.submit(reviewData).subscribe({
-          ╵                                           ~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:83:29:
+      83 │           <form [formGroup]="reviewForm" (ngSubmit)="submitReview()">
+         ╵                              ~~~~~~~~~~
 
+  Error occurs in the template of component HotelDetailComponent.
 
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel[]>'. [plugin angular-compiler]
-
-    src/app/pages/hotels/hotels.component.ts:30:10:
-      30 │         ).subscribe({
-         ╵           ~~~~~~~~~
-
-
-✘ [ERROR] TS7006: Parameter 'hotels' implicitly has an 'any' type. [plugin angular-compiler]
-
-    src/app/pages/hotels/hotels.component.ts:31:17:
-      31 │           next: (hotels) => {
-         ╵                  ~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'hasReviewError' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
-    src/app/pages/hotels/hotels.component.ts:35:18:
-      35 │           error: (err) => {
-         ╵                   ~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:89:31:
+      89 │                 [class.error]="hasReviewError('rating')">
+         ╵                                ~~~~~~~~~~~~~~
 
+  Error occurs in the template of component HotelDetailComponent.
 
-✘ [ERROR] TS2339: Property 'subscribe' does not exist on type 'Promise<Hotel[]>'. [plugin angular-compiler]
-
-    src/app/pages/hotels/hotels.component.ts:41:35:
-      41 │         this.hotelService.getAll().subscribe({
-         ╵                                    ~~~~~~~~~
-
-
-✘ [ERROR] TS7006: Parameter 'hotels' implicitly has an 'any' type. [plugin angular-compiler]
-
-    src/app/pages/hotels/hotels.component.ts:42:17:
-      42 │           next: (hotels) => {
-         ╵                  ~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'getReviewErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
-    src/app/pages/hotels/hotels.component.ts:46:18:
-      46 │           error: (err) => {
-         ╵                   ~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:96:19:
+      96 │               @if (getReviewErrorMessage('rating')) {
+         ╵                    ~~~~~~~~~~~~~~~~~~~~~
 
+  Error occurs in the template of component HotelDetailComponent.
 
-✘ [ERROR] TS2774: This condition will always return true since this function is always defined. Did you mean to call it instead? [plugin angular-compiler]
-
-    src/app/pages/profile/profile.component.html:43:13:
-      43 │         @if (loyaltyAccount) {
-         ╵              ~~~~~~~~~~~~~~
-
-  Error occurs in the template of component ProfileComponent.
-
-    src/app/pages/profile/profile.component.ts:22:15:
-      22 │   templateUrl: './profile.component.html'
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2339: Property 'pointsBalance' does not exist on type 'WritableSignal<LoyaltyAccount | null>'. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'getReviewErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
-    src/app/pages/profile/profile.component.html:47:61:
-      47 │ ...pan class="points-value">{{ loyaltyAccount.pointsBalance }}</span>
-         ╵                                               ~~~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:97:47:
+      97 │ ...class="error-message">{{ getReviewErrorMessage('rating') }}</span>
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~
 
-  Error occurs in the template of component ProfileComponent.
+  Error occurs in the template of component HotelDetailComponent.
 
-    src/app/pages/profile/profile.component.ts:22:15:
-      22 │   templateUrl: './profile.component.html'
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2339: Property 'totalPointsEarned' does not exist on type 'WritableSignal<LoyaltyAccount | null>'. [plugin angular-compiler]
-
-    src/app/pages/profile/profile.component.html:54:37:
-      54 │                 <p>{{ loyaltyAccount.totalPointsEarned }} points</p>
-         ╵                                      ~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component ProfileComponent.
-
-    src/app/pages/profile/profile.component.ts:22:15:
-      22 │   templateUrl: './profile.component.html'
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2339: Property 'lastUpdated' does not exist on type 'WritableSignal<LoyaltyAccount | null>'. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'hasReviewError' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
-    src/app/pages/profile/profile.component.html:58:37:
-      58 │ ...           <p>{{ loyaltyAccount.lastUpdated | date:'medium' }}</p>
-         ╵                                    ~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:106:31:
+      106 │                 [class.error]="hasReviewError('comment')"
+          ╵                                ~~~~~~~~~~~~~~
 
-  Error occurs in the template of component ProfileComponent.
+  Error occurs in the template of component HotelDetailComponent.
 
-    src/app/pages/profile/profile.component.ts:22:15:
-      22 │   templateUrl: './profile.component.html'
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-✘ [ERROR] TS2488: Type 'WritableSignal<PointsTransaction[]>' must have a '[Symbol.iterator]()' method that returns an iterator. [plugin angular-compiler]
+✘ [ERROR] TS2339: Property 'getReviewErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
 
-    src/app/pages/profile/profile.component.html:75:31:
-      75 │           @for (transaction of transactions; track transaction.id) {
-         ╵                                ~~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.html:109:19:
+      109 │               @if (getReviewErrorMessage('comment')) {
+          ╵                    ~~~~~~~~~~~~~~~~~~~~~
 
-  Error occurs in the template of component ProfileComponent.
+  Error occurs in the template of component HotelDetailComponent.
 
-    src/app/pages/profile/profile.component.ts:22:15:
-      22 │   templateUrl: './profile.component.html'
-         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getReviewErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:110:47:
+      110 │ ...ass="error-message">{{ getReviewErrorMessage('comment') }}</span>
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'reviewForm' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:112:39:
+      112 │ ...   <small class="hint">{{ reviewForm.get('comment')?.value?.le...
+          ╵                              ~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'formGroup' since it isn't a known property of 'form'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:184:12:
+      184 │       <form [formGroup]="bookingForm" (ngSubmit)="bookHotel()">
+          ╵             ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'bookingForm' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:184:25:
+      184 │       <form [formGroup]="bookingForm" (ngSubmit)="bookHotel()">
+          ╵                          ~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'hasBookingError' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:192:27:
+      192 │             [class.error]="hasBookingError('checkInDate')"
+          ╵                            ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getBookingErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:195:15:
+      195 │           @if (getBookingErrorMessage('checkInDate')) {
+          ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getBookingErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:196:43:
+      196 │ ...="error-message">{{ getBookingErrorMessage('checkInDate') }}</...
+          ╵                        ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'hasBookingError' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:207:27:
+      207 │             [class.error]="hasBookingError('checkOutDate')"
+          ╵                            ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'bookingForm' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:208:19:
+      208 │             [min]="bookingForm.value.checkInDate || tomorrow"
+          ╵                    ~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getBookingErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:210:15:
+      210 │           @if (getBookingErrorMessage('checkOutDate')) {
+          ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getBookingErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:211:43:
+      211 │ ...="error-message">{{ getBookingErrorMessage('checkOutDate') }}<...
+          ╵                        ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'hasBookingError' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:222:27:
+      222 │             [class.error]="hasBookingError('numberOfGuests')"
+          ╵                            ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getBookingErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:226:15:
+      226 │           @if (getBookingErrorMessage('numberOfGuests')) {
+          ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'getBookingErrorMessage' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:227:43:
+      227 │ ...="error-message">{{ getBookingErrorMessage('numberOfGuests') }...
+          ╵                        ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2339: Property 'bookingForm' does not exist on type 'HotelDetailComponent'. [plugin angular-compiler]
+
+    src/app/pages/hotel-detail/hotel-detail.component.html:262:43:
+      262 │ ...span>Loyalty Discount ({{ bookingForm.get('pointsToRedeem')?.v...
+          ╵                              ~~~~~~~~~~~
+
+  Error occurs in the template of component HotelDetailComponent.
+
+    src/app/pages/hotel-detail/hotel-detail.component.ts:16:15:
+      16 │   templateUrl: './hotel-detail.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Watch mode enabled. Watching for file changes...
