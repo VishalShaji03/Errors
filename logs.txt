@@ -1,15 +1,6 @@
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 GET https://localhost:5001/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.6939ms
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - -
-fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
-      An unhandled exception has occurred while executing the request.
-      Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Hotels/search" for actions - FinalDestinationAPI.Controllers.HotelsController.SearchHotels (finaldestination),FinalDestinationAPI.Controllers.HotelsController.SearchHotels (finaldestination). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
-         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
-         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
-         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
-         at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
-         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - 500 - text/plain;+charset=utf-8 102.4579ms
+⚠️ [AUTH] Role is numeric, converting to string. Backend should be restarted!
+normalizeUserRole @ auth.service.ts:38
+bookings.component.ts:96 💳 Processing payment: Objectamount: 3985bookingId: 11cardNumber: "4111****1111"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ ()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+bookings.component.ts:115 💳 Payment result: Objectamount: 3985currency: "USD"errorMessage: nullpaymentId: 10processedAt: "2025-11-10T01:00:17.8057002"status: 2transactionId: "USUVDWQ0J5Y3"[[Prototype]]: Object
+bookings.component.ts:126  ❌ Payment failed: Objectamount: 3985currency: "USD"errorMessage: nullpaymentId: 10processedAt: "2025-11-10T01:00:17.8057002"status: 2transactionId: "USUVDWQ0J5Y3"[[Prototype]]: Object
+(anonymous) @ bookings.component.ts:126
