@@ -1,16 +1,44 @@
-🐛 DEBUG INFO:
-User: Jane Manager
-Role: 2
-Role Type: number
-hasRole('HotelManager'): false
-hasAnyRole(['HotelManager', 'Admin']): false
-
-TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
-  Type 'number' is not assignable to type 'string'.
-src/app/services/auth.service.ts:156:41
-✘ [ERROR] TS2345: Argument of type 'string | number' is not assignable to parameter of type 'string'.
-  Type 'number' is not assignable to type 'string'. [plugin angular-compiler]
-
-    src/app/services/auth.service.ts:156:41:
-      156 │     const result = user ? roles.includes(user.role) : false;
-          ╵                                          ~~~~~~~~~
+:58714/api/loyalty/account:1   Failed to load resource: the server responded with a status of 401 (Unauthorized)
+profile.component.ts:48  Failed to load loyalty account: HttpErrorResponse
+(anonymous) @ profile.component.ts:48
+rejected @ chunk-4NW27S7Q.js:35
+invoke @ zone.js:398
+onInvoke @ debug_node.mjs:7850
+invoke @ zone.js:397
+run @ zone.js:113
+(anonymous) @ zone.js:2537
+invokeTask @ zone.js:431
+(anonymous) @ debug_node.mjs:7514
+onInvokeTask @ debug_node.mjs:7514
+invokeTask @ zone.js:430
+onInvokeTask @ debug_node.mjs:7837
+invokeTask @ zone.js:430
+runTask @ zone.js:161
+drainMicroTaskQueue @ zone.js:612
+invokeTask @ zone.js:519
+invokeTask @ zone.js:1141
+globalCallback @ zone.js:1184
+globalZoneAwareCallback @ zone.js:1205
+:58714/api/loyalty/transactions:1   Failed to load resource: the server responded with a status of 404 (Not Found)
+profile.component.ts:56  Failed to load transactions: HttpErrorResponse
+(anonymous) @ profile.component.ts:56
+rejected @ chunk-4NW27S7Q.js:35
+invoke @ zone.js:398
+onInvoke @ debug_node.mjs:7850
+invoke @ zone.js:397
+run @ zone.js:113
+(anonymous) @ zone.js:2537
+invokeTask @ zone.js:431
+(anonymous) @ debug_node.mjs:7514
+onInvokeTask @ debug_node.mjs:7514
+invokeTask @ zone.js:430
+onInvokeTask @ debug_node.mjs:7837
+invokeTask @ zone.js:430
+runTask @ zone.js:161
+drainMicroTaskQueue @ zone.js:612
+invokeTask @ zone.js:519
+invokeTask @ zone.js:1141
+globalCallback @ zone.js:1184
+globalZoneAwareCallback @ zone.js:1205
+:58714/api/bookings/my:1   Failed to load resource: the server responded with a status of 401 (Unauthorized)
+booking.service.ts:14   GET http://localhost:58714/api/bookings/my 401 (Unauthorized)
